@@ -8,7 +8,7 @@ public MenuButton extends GameButton
     myLenY = 20;
     myText = "Menu";
   }
-  public myPurpose()
+  public void myPurpose()
   {
     isPaused = !isPaused;
   }
