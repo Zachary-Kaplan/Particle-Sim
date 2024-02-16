@@ -15,12 +15,12 @@ class GameButton
   //}
   public void show()
   {
+    fill(150);
+    text(myText,myX + (myLenX / 10), myY + (myLenY / 2));
     fill(80);
     strokeWeight(2);
     stroke(220);
-    rect(myX,myX,myLenX,myLenY);
-    fill(150);
-    text(myText,myX + (myLenX / 10), myY + (myLenY / 2));
+    rect(myX,myY,myLenX,myLenY);
   }
   public boolean wasClicked()
   {
