@@ -5,14 +5,14 @@ class Button
   public Button()
   {
   }
-  public Button(int newX, int newY, int newLenX, int newLenY, String newText)
-  {
-    myX = newX;
-    myY = newY;
-    myLenX = newLenX;
-    myLenY = newLenY;
-    myText = newText;
-  }
+  //public Button(int newX, int newY, int newLenX, int newLenY, String newText)
+  //{
+    //myX = newX;
+    //myY = newY;
+    //myLenX = newLenX;
+    //myLenY = newLenY;
+    //myText = newText;
+  //}
   public show()
   {
     fill(80);
@@ -30,5 +30,5 @@ class Button
     }
   }
   public myPurpose()
-  {};
+  {}
 }
