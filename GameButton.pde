@@ -22,10 +22,11 @@ class GameButton
     fill(150);
     text(myText,myX + (myLenX / 10), myY + (myLenY / 2));
   }
-  public void wasClicked()
+  public boolean wasClicked()
   {
     if(((mouseX > myX) && (mouseX < myX + myLenX)) && ((mouseY > myY) && (mouseY < myY + myLenY)))
     {
+      return true;
       myPurpose();
     }
   }
