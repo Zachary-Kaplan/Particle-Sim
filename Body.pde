@@ -64,7 +64,7 @@ class Body
      conAngle = 0;
    }else
    {
-     conAngle = atan((float)((myY - conObj.getY()) / (myX - conObj.getX())))
+     conAngle = atan((float)((myY - conObj.getY()) / (myX - conObj.getX())));
    }
    if ((myX - conObj.getX()) < 0)
    {
