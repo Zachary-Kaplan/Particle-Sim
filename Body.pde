@@ -50,8 +50,22 @@ class Body
  
   public double contact(Body conObj, boolean XorY)
   {
-   double myAngle = atan((float)( myVelocityY / myVelocityX));
-   double conAngle = atan((float)((myY - conObj.getY()) / (myX - conObj.getX())));
+   double myAngle;
+   double;
+   if(myVelocityX == 0)
+   {
+     myAngle = 0;
+   } else
+   {
+     myAngle = atan((float)( myVelocityY / myVelocityX));
+   }
+   if(myX - conObj.getX() == 0)
+   {
+     conAngle == 0;
+   }else
+   {
+     conAngle = atan((float)((myY - conObj.getY()) / (myX - conObj.getX())))
+   |
    if ((myX - conObj.getX()) < 0)
    {
      conAngle += PI;
@@ -87,11 +101,11 @@ class Body
       double distance = dist((float)myX,(float)myY,(float)celestialArray.get(a).getX(),(float)celestialArray.get(a).getY());
       double deltaY = myY - celestialArray.get(a).getY();
       double deltaX = myX - celestialArray.get(a).getX();
-      double angleBetween = Math.atan(deltaY/deltaX);
       if(deltaX == 0)
       {
         deltaX = 1;
       }
+      double angleBetween = Math.atan(deltaY/deltaX);
       if(deltaX < 0)
       {
         if(deltaY > 0)
