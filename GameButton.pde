@@ -1,11 +1,11 @@
-class Button
+class GameButton
 {
   protected int myX, myY, myLenX, myLenY;
   protected String myText;
-  public Button()
+  public GameButton()
   {
   }
-  //public Button(int newX, int newY, int newLenX, int newLenY, String newText)
+  //public GameButton(int newX, int newY, int newLenX, int newLenY, String newText)
   //{
     //myX = newX;
     //myY = newY;
