@@ -122,21 +122,24 @@ void keyPressed()
 
 void mousePressed()
 {
-  if(John.)
-  if(bodyType[bodyIndex] == "Star")
+  if(John.wasClicked())
+  {} else
   {
-  celestialArray.add(new Star());
-  } else if(bodyType[bodyIndex] == "Planet")
-  {
-  celestialArray.add(new Planet());
-  } else if(bodyType[bodyIndex] == "Moon")
-  {
-  celestialArray.add(new Moon());
-  }
-  //System.out.println(celestialArray.size());
-  for(int i =0; i < celestialArray.size(); i++)
-  {
-    //System.out.print(celestialArray.get(i).getX() + ", " + celestialArray.get(i).getY() + " | ");
-  }
-  ////System.out.println("");
+   if(bodyType[bodyIndex] == "Star")
+   {
+   celestialArray.add(new Star());
+   } else if(bodyType[bodyIndex] == "Planet")
+   {
+   celestialArray.add(new Planet());
+   } else if(bodyType[bodyIndex] == "Moon")
+   {
+   celestialArray.add(new Moon());
+   }
+   //System.out.println(celestialArray.size());
+   for(int i =0; i < celestialArray.size(); i++)
+   {
+     //System.out.print(celestialArray.get(i).getX() + ", " + celestialArray.get(i).getY() + " | ");
+   }
+   ////System.out.println("");
+ }
 }
