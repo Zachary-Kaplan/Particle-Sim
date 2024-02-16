@@ -29,5 +29,6 @@ class Button
       myPurpose();
     }
   }
-  public myPurpose();
+  public myPurpose()
+  {};
 }
