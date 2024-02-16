@@ -1,6 +1,6 @@
 public MenuButton extends Button
 {
-  public menuButton()
+  public MenuButton()
   {
     myX = width - 50;
     myY = 10;
