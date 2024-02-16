@@ -55,8 +55,8 @@ void draw()
     }
     if(celestialArray.get(a).delete() == true)
     {
-      System.out.println(a);
-      System.out.println(celestialArray.size());
+      //System.out.println(a);
+      //System.out.println(celestialArray.size());
       celestialArray.remove(a);
     }
   }
@@ -129,10 +129,10 @@ void mousePressed()
   {
   celestialArray.add(new Moon());
   }
-  System.out.println(celestialArray.size());
+  //System.out.println(celestialArray.size());
   for(int i =0; i < celestialArray.size(); i++)
   {
-    System.out.print(celestialArray.get(i).getX() + ", " + celestialArray.get(i).getY() + " | ");
+    //System.out.print(celestialArray.get(i).getX() + ", " + celestialArray.get(i).getY() + " | ");
   }
-  System.out.println("");
+  ////System.out.println("");
 }
