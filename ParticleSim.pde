@@ -65,6 +65,7 @@ void draw()
   }
  
   fill(255);
+John.show();
   text("Celestial Body: " + bodyType[bodyIndex], 0,20);
   text("Initial X-Velocity: " + startVelocityX, 0, 30);
   text("Initial Y-Velocity: " + startVelocityY, 0, 40);
@@ -121,6 +122,7 @@ void keyPressed()
 
 void mousePressed()
 {
+  if(John.)
   if(bodyType[bodyIndex] == "Star")
   {
   celestialArray.add(new Star());
