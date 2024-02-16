@@ -31,7 +31,7 @@ class Body
   {
   myX += myVelocityX;
   myY += myVelocityY;
-  System.out.println(myX + ", " + myY + ", " + myVelocityX + ", " + myVelocityY);
+  //System.out.println(myX + ", " + myY + ", " + myVelocityX + ", " + myVelocityY);
   if(myX > width)
   {
     outOfBounds = true;
