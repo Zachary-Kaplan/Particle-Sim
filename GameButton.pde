@@ -26,8 +26,8 @@ class GameButton
   {
     if(((mouseX > myX) && (mouseX < myX + myLenX)) && ((mouseY > myY) && (mouseY < myY + myLenY)))
     {
-      return true;
       myPurpose();
+      return true;
     }
     return false;
   }
