@@ -1,4 +1,4 @@
-public MenuButton extends GameButton
+class MenuButton extends GameButton
 {
   public MenuButton()
   {
