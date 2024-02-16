@@ -2,10 +2,10 @@ class Button
 {
   protected int myX, myY, myLenX, myLenY;
   protected String myText;
-  button()
+  public button()
   {
   }
-  button(int newX, int newY, int newLenX, int newLenY, String newText)
+  public button(int newX, int newY, int newLenX, int newLenY, String newText)
   {
     myX = newX;
     myY = newY;
@@ -13,7 +13,7 @@ class Button
     myLenY = newLenY;
     myText = newText;
   }
-  show()
+  public show()
   {
     fill(80);
     strokeWeight(2);
@@ -22,4 +22,12 @@ class Button
     fill(150);
     text(myText,myX + (myLenX / 10), myY + (myLenY / 2));
   }
+  public wasClicked()
+  {
+    if(((mouseX > myX) && (mouseX < myX + myLenX)) && ((mouseY > myY) && (mouseY < myY + myLenY)))
+    {
+      myPurpose();
+    }
+  }
+  public myPurpose();
 }
