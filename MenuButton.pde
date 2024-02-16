@@ -1,4 +1,4 @@
-public menuButton extends Button
+public mnuButton extends Button
 {
   public menuButton()
   {
