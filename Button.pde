@@ -2,10 +2,10 @@ class Button
 {
   protected int myX, myY, myLenX, myLenY;
   protected String myText;
-  public button()
+  public Button()
   {
   }
-  public button(int newX, int newY, int newLenX, int newLenY, String newText)
+  public Button(int newX, int newY, int newLenX, int newLenY, String newText)
   {
     myX = newX;
     myY = newY;
