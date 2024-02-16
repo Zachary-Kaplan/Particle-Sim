@@ -1,5 +1,5 @@
 ArrayList <Body> celestialArray = new ArrayList <Body>();
-menuButton john
+MenuButton john;
 double Grav = 0.001;
 String[] bodyType = new String[]{"Star", "Planet", "Moon"};
 int bodyIndex = 0;
@@ -9,7 +9,7 @@ boolean isPaused = false;
 
 void setup()
 {
-  john = new menuButton();
+  john = new MenuButton();
   //frameRate(10);
   size(1000,1000);
   background(0,0,0);
