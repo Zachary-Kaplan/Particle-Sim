@@ -1,6 +1,6 @@
 public menuButton extends Button
 {
-  menuButton()
+  public menuButton()
   {
     myX = width - 50;
     myY = 10;
@@ -8,7 +8,7 @@ public menuButton extends Button
     myLenY = 20;
     myText = "Menu";
   }
-  myPurpose()
+  public myPurpose()
   {
     isPaused = !isPaused;
   }
