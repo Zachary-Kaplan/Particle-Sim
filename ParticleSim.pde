@@ -1,5 +1,5 @@
 ArrayList <Body> celestialArray = new ArrayList <Body>();
-menuButton john = new menuButton();
+menuButton john = new menuButton(); 
 double Grav = 0.001;
 String[] bodyType = new String[]{"Star", "Planet", "Moon"};
 int bodyIndex = 0;
