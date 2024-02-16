@@ -51,7 +51,7 @@ class Body
   public double contact(Body conObj, boolean XorY)
   {
    double myAngle;
-   double;
+   double conAngle;
    if(myVelocityX == 0)
    {
      myAngle = 0;
