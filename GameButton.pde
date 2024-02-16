@@ -13,7 +13,7 @@ class GameButton
     //myLenY = newLenY;
     //myText = newText;
   //}
-  public show()
+  public void show()
   {
     fill(80);
     strokeWeight(2);
@@ -22,13 +22,13 @@ class GameButton
     fill(150);
     text(myText,myX + (myLenX / 10), myY + (myLenY / 2));
   }
-  public wasClicked()
+  public void wasClicked()
   {
     if(((mouseX > myX) && (mouseX < myX + myLenX)) && ((mouseY > myY) && (mouseY < myY + myLenY)))
     {
       myPurpose();
     }
   }
-  public myPurpose()
+  public void myPurpose()
   {}
 }
