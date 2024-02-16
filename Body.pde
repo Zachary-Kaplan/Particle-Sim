@@ -61,11 +61,11 @@ class Body
    }
    if(myX - conObj.getX() == 0)
    {
-     conAngle == 0;
+     conAngle = 0;
    }else
    {
      conAngle = atan((float)((myY - conObj.getY()) / (myX - conObj.getX())))
-   |
+   }
    if ((myX - conObj.getX()) < 0)
    {
      conAngle += PI;
