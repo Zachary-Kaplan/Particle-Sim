@@ -29,6 +29,7 @@ class GameButton
       return true;
       myPurpose();
     }
+    return false;
   }
   public void myPurpose()
   {}
