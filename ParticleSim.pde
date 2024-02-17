@@ -122,24 +122,35 @@ void keyPressed()
 
 void mousePressed()
 {
-  if(John.wasClicked())
-  {} else
-  {
-   if(bodyType[bodyIndex] == "Star")
-   {
-   celestialArray.add(new Star());
-   } else if(bodyType[bodyIndex] == "Planet")
-   {
-   celestialArray.add(new Planet());
-   } else if(bodyType[bodyIndex] == "Moon")
-   {
-   celestialArray.add(new Moon());
-   }
-   //System.out.println(celestialArray.size());
+ if(John.wasClicked())
+ {} else
+ {
+   boolean isSameSpot = false;
    for(int i =0; i < celestialArray.size(); i++)
    {
-     //System.out.print(celestialArray.get(i).getX() + ", " + celestialArray.get(i).getY() + " | ");
+     if((celestialArray.get(i).getX() == mouseX) && (celestialArray.get(i).getY() == mouseY))
+     {
+       isSameSpot = true;
+     }
    }
-   ////System.out.println("");
+   if(!isSameSpot)
+   {
+    if(bodyType[bodyIndex] == "Star")
+    {
+     celestialArray.add(new Star());
+    } else if(bodyType[bodyIndex] == "Planet")
+    {
+     celestialArray.add(new Planet());
+    } else if(bodyType[bodyIndex] == "Moon")
+    {
+     celestialArray.add(new Moon());
+    }
+    //System.out.println(celestialArray.size());
+    for(int i =0; i < celestialArray.size(); i++)
+    {
+      //System.out.print(celestialArray.get(i).getX() + ", " + celestialArray.get(i).getY() + " | ");
+    }
+    ////System.out.println("");
+  }
  }
 }
