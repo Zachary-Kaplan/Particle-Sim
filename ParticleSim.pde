@@ -128,7 +128,7 @@ void mousePressed()
    boolean isSameSpot = false;
    for(int i =0; i < celestialArray.size(); i++)
    {
-     if((celestialArray.get(i).getX() == mouseX) && (celestialArray.get(i).getY() == mouseY))
+     if((abs(celestialArray.get(i).getX() - mouseX) < 10) && (10 > abs(celestialArray.get(i).getY() == mouseY)))
      {
        isSameSpot = true;
      }
