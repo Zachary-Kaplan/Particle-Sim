@@ -20,7 +20,7 @@ class GameButton
     stroke(220);
     rect(myX,myY,myLenX,myLenY);
     fill(240);
-    text(myText,myX + (myLenX / 10), myY + (myLenY / 2));
+    text(myText,myX + (myLenX / 10), myY + (myLenY / 2) + 4);
   }
   public boolean wasClicked()
   {
