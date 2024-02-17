@@ -24,7 +24,10 @@ void draw()
   for(int a = 0; a < celestialArray.size(); a++)
   {
   celestialArray.get(a).show();
-  if(isPaused == false)
+  if(isPaused)
+  {
+   
+  } else
   {
     celestialArray.get(a).move();
     celestialArray.get(a).accelerate(a);
