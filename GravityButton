@@ -10,10 +10,27 @@ class GravityButton extends GameButton
   }
   public void myPurpose()
   {
-    if()
+    if(Grav == 0)
+    {
+      Grav = 0.001
+    } else
+    {
+      Grav = 0
+    }
   }
   public void show()
   {
    super.show()
+   if(Grav == 0)
+   {
+     fill(250,0,0);
+     noStroke();
+     ellipse(230,150,2,2);
+   } else
+   {
+     fill(0,250,0);
+     noStroke();
+     ellipse(230,150,2,2);
+   }
   }
 }
