@@ -11,5 +11,6 @@ class MenuButton extends GameButton
   public void myPurpose()
   {
     isPaused = !isPaused;
+    menuOpened = ! menuOpened;
   }
 }
