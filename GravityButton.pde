@@ -24,13 +24,11 @@ class GravityButton extends GameButton
    if(Grav == 0)
    {
      fill(250,0,0);
-     noStroke();
-     ellipse(230,140,4,4);
    } else
    {
      fill(0,250,0);
-     noStroke();
-     ellipse(230,150,2,2);
    }
+   noStroke();
+   ellipse(230,140,4,4);
   }
 }
