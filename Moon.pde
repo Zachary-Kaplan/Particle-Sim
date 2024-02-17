@@ -2,6 +2,7 @@ class Moon extends Body
 {
   public Moon()
   {
+  myCharge = (0-10);
   myMass = 10;
   myX = mouseX;
   myY = mouseY;
