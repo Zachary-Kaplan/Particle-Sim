@@ -36,7 +36,7 @@ void draw()
     rect(450, 80, 100, 20);
     fill(240);
     text("Paused", 475, 93);
-    Margaret.show()
+    Margaret.show();
   } else
   {
     celestialArray.get(a).move();
