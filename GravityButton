@@ -12,15 +12,15 @@ class GravityButton extends GameButton
   {
     if(Grav == 0)
     {
-      Grav = 0.001
+      Grav = 0.001;
     } else
     {
-      Grav = 0
+      Grav = 0;
     }
   }
   public void show()
   {
-   super.show()
+   super.show();
    if(Grav == 0)
    {
      fill(250,0,0);
