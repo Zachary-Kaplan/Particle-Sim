@@ -27,7 +27,7 @@ void draw()
   for(int a = 0; a < celestialArray.size(); a++)
   {
   celestialArray.get(a).show();
-  if(isPaused)
+  if(menuOpened)
   {
     fill(80);
     strokeWeight(2);
@@ -138,6 +138,12 @@ void mousePressed()
  if(John.wasClicked())
  {}else
  {
+  if(menuOpened)
+  {
+   if(Margaret.wasClicked())
+   {}
+  } else
+  {
    boolean isSameSpot = false;
    for(int i =0; i < celestialArray.size(); i++)
    {
@@ -164,6 +170,7 @@ void mousePressed()
       //System.out.print(celestialArray.get(i).getX() + ", " + celestialArray.get(i).getY() + " | ");
     }
     ////System.out.println("");
+    }
   }
  }
 }
