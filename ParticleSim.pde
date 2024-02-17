@@ -32,7 +32,7 @@ void draw()
     rect(200,100,600,700);
     rect(450, 80, 100, 20);
     fill(240);
-    text("Paused", 455, 85);
+    text("Paused", 460, 90);
   } else
   {
     celestialArray.get(a).move();
