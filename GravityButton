@@ -1,0 +1,19 @@
+class GravityButton extends GameButton
+{
+  public GravityButton()
+  {
+    myX = 230;
+    myY = 140;
+    myLenX = 80;
+    myLenY = 20;
+    myText = "Gravity";
+  }
+  public void myPurpose()
+  {
+    if()
+  }
+  public void show()
+  {
+   super.show()
+  }
+}
