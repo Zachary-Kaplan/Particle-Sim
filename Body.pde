@@ -4,7 +4,7 @@ class Body
   protected double myVelocityX, myVelocityY;
   protected double myMass, myDiameter, myCharge;
   protected boolean outOfBounds = false;
-  public Body()
+  public Body() 
   {
   myMass = 10000;
   myX = width * Math.random();
