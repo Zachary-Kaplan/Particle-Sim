@@ -7,7 +7,7 @@ class Planet extends Body
   myX = mouseX;
   myY = mouseY;
   myDiameter = 10;
-  myVelocityX = startVelocityX;
+  myVelocityX = startVelocityX; 
   myVelocityY = startVelocityY;
   }
   public void show()
