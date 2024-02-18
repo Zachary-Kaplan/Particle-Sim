@@ -15,5 +15,5 @@ class Planet extends Body
   noStroke();
   fill(20, 186, 227);
   super.show();
-  }
+  } 
 }
