@@ -151,7 +151,7 @@ class Body
   {
   return myDiameter;
   }
-  public double getCharge();
+  public double getCharge()
   {
   return myCharge;
   }
