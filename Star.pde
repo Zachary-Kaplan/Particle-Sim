@@ -10,7 +10,7 @@ class Star extends Body
   myVelocityX = startVelocityX;
   myVelocityY = startVelocityY;
   }
-  public void show()
+  public void show() 
   {
   noStroke();
   fill(242, 224, 24);
