@@ -29,6 +29,6 @@ class ElectricityButton extends GameButton
      fill(0,250,0);
    }
    noStroke();
-   ellipse(230,140,4,4);
+   ellipse(230,170,4,4);
   }
 }
