@@ -2,7 +2,7 @@ class Body
 {
   protected double myX, myY;
   protected double myVelocityX, myVelocityY;
-  protected double myMass, myDiameter, myCharge
+  protected double myMass, myDiameter, myCharge;
   protected boolean outOfBounds = false;
   public Body()
   {
