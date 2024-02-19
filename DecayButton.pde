@@ -10,7 +10,7 @@ class DecayButton extends GameButton
   }
   public void myPurpose()
   {
-    doesDeacy = !doesDeacy;
+    doesDecay = !doesDecay;
 
   }
   public void show()
