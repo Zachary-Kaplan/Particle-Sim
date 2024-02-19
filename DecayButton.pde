@@ -3,7 +3,7 @@ class DecayButton extends GameButton
   public DecayButton()
   {
     myX = 230;
-    myY = 190;
+    myY = 200;
     myLenX = 100;
     myLenY = 20;
     myText = "Energy Decay";
@@ -24,6 +24,6 @@ class DecayButton extends GameButton
      fill(0,250,0);
    }
    noStroke();
-   ellipse(230,170,4,4);
+   ellipse(230,200,4,4);
   }
 }
