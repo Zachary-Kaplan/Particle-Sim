@@ -124,7 +124,11 @@ class Body
   myVelocityX -= netAccelerationX / frameRate;
   myVelocityY -= netAccelerationY / frameRate;
   }
- 
+  public void decay()
+  {
+    myVelocityX *= 0.99; 
+    myVelocityY *= 0.99; 
+  }
  
   //getters
   public double getX()
