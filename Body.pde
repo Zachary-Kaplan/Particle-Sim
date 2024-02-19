@@ -126,8 +126,11 @@ class Body
   }
   public void decay()
   {
-    myVelocityX *= 0.99; 
-    myVelocityY *= 0.99; 
+    if(doesDecay)
+    {
+      myVelocityX *= 0.99; 
+      myVelocityY *= 0.99; 
+    }
   }
  
   //getters
