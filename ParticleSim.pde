@@ -48,6 +48,7 @@ void draw()
   {
     celestialArray.get(a).move();
     celestialArray.get(a).accelerate(a);
+    celestialArray.get(a).decay();
     //System.out.println(celestialArray.get(a).getVelocityX());
     for(int i = 0; i < celestialArray.size(); i++)
     {
