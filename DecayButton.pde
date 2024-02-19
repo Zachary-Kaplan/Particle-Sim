@@ -16,7 +16,7 @@ class DecayButton extends GameButton
   public void show()
   {
    super.show();
-   if(!doesDeacy)
+   if(!doesDecay)
    {
      fill(250,0,0);
    } else
