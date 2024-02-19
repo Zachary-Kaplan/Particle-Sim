@@ -2,7 +2,7 @@ ArrayList <Body> celestialArray = new ArrayList <Body>();
 MenuButton John;
 GravityButton Margaret;
 ElectricityButton Adam;
-DecayButton Blorbo;
+DecayButton Blorbo; 
 double Grav = 0.001;
 double Elec = 0.0001;
 String[] bodyType = new String[]{"Star", "Planet", "Moon"};
