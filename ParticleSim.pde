@@ -11,6 +11,7 @@ double startVelocityX = 0;
 double startVelocityY = 0;
 boolean isPaused = false;
 boolean menuOpened = false;
+boolean doesDecay = false;
 
 void setup()
 {
