@@ -1,5 +1,5 @@
 class DecayButton extends GameButton
-{
+{ 
   public DecayButton()
   {
     myX = 230;
