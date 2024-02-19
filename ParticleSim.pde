@@ -2,6 +2,7 @@ ArrayList <Body> celestialArray = new ArrayList <Body>();
 MenuButton John;
 GravityButton Margaret;
 ElectricityButton Adam;
+DecayButton Blorbo;
 double Grav = 0.001;
 double Elec = 0.0001;
 String[] bodyType = new String[]{"Star", "Planet", "Moon"};
@@ -16,6 +17,7 @@ void setup()
   John = new MenuButton();
   Margaret = new GravityButton();
   Adam = new ElectricityButton();
+  Blorbo = new DecayButton();
   //frameRate(10);
   size(1000,1000);
   background(0,0,0);
@@ -41,6 +43,7 @@ void draw()
     text("Paused", 475, 93);
     Margaret.show();
     Adam.show();
+    Blorbo.show();
   } else
   {
     celestialArray.get(a).move();
@@ -146,6 +149,7 @@ void mousePressed()
   {
    if(Margaret.wasClicked())
    {} else if(Adam.wasClicked())
+   {} else if(Blorbo.wasClicked())
    {}
   } else
   {
