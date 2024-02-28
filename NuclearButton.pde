@@ -2,7 +2,7 @@ class NuclearButton extends GameButton
 {
   public NuclearButton()
   {
-    myX = 230;
+    myX = 230; 
     myY = 230;
     myLenX = 100;
     myLenY = 20;
