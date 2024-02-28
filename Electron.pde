@@ -3,7 +3,7 @@ class Electron extends Body
   public Electron()
   {
   myNuke = 0.1;
-  myCharge = -7;
+  myCharge = -70;
   myMass = 500; 
   myX = mouseX;
   myY = mouseY; 
