@@ -12,7 +12,7 @@ class NuclearButton extends GameButton
   {
     if(Nuke == 0)
     {
-      Nuke = 0.01;
+      Nuke = 0.1;
     } else
     {
       Nuke = 0;
