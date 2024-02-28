@@ -6,7 +6,7 @@ class Electron extends Body
   myCharge = -7;
   myMass = 500; 
   myX = mouseX;
-  myY = mouseY;
+  myY = mouseY; 
   myDiameter = 3;
   myVelocityX = startVelocityX; 
   myVelocityY = startVelocityY;
