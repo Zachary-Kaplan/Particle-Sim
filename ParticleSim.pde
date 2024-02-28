@@ -2,7 +2,8 @@ ArrayList <Body> celestialArray = new ArrayList <Body>();
 MenuButton John;
 GravityButton Margaret;
 ElectricityButton Adam;
-DecayButton Blorbo; 
+DecayButton Blorbo;
+NuclearButton Bill;
 double Grav = 0.001;
 double Elec = 0.0001;
 double Nuke = 0.01;
@@ -20,6 +21,7 @@ void setup()
   Margaret = new GravityButton();
   Adam = new ElectricityButton();
   Blorbo = new DecayButton();
+  Bill = new NuclearButton();
   //frameRate(10);
   size(1000,1000);
   background(0,0,0);
@@ -46,6 +48,7 @@ void draw()
     Margaret.show();
     Adam.show();
     Blorbo.show();
+    Bill.show();
   } else
   {
     celestialArray.get(a).move();
