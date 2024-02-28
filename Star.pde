@@ -2,6 +2,7 @@ class Star extends Body
 {
   public Star()
   {
+  myNuke = 1;
   myCharge = 10;
   myMass = 10000000;
   myX = mouseX;
