@@ -2,7 +2,7 @@ class MenuButton extends GameButton
 {
   public MenuButton()
   {
-    myX = 1000 - 50;
+    myX = 1000 - 70;
     myY = 10;
     myLenX = 50;
     myLenY = 20;
