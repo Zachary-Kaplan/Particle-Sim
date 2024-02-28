@@ -7,7 +7,7 @@ NuclearButton Bill;
 double Grav = 0.001;
 double Elec = 0.0001;
 double Nuke = 0.1;
-String[] bodyType = new String[]{"Star", "Planet", "Moon"};
+String[] bodyType = new String[]{"Star", "Planet", "Moon", "Proton", "Neutron", "Electron"};
 int bodyIndex = 0;
 double startVelocityX = 0;
 double startVelocityY = 0;
@@ -178,6 +178,15 @@ void mousePressed()
     } else if(bodyType[bodyIndex] == "Moon")
     {
      celestialArray.add(new Moon());
+    } else if(bodyType[bodyIndex] == "Proton")
+    {
+     celestialArray.add(new Proton());
+    } else if(bodyType[bodyIndex] == "Neutron")
+    {
+     celestialArray.add(new Neutron());
+    } else if(bodyType[bodyIndex] == "Electron")
+    {
+     celestialArray.add(new Electron());
     }
     //System.out.println(celestialArray.size());
     for(int i =0; i < celestialArray.size(); i++)
