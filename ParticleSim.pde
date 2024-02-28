@@ -5,6 +5,7 @@ ElectricityButton Adam;
 DecayButton Blorbo; 
 double Grav = 0.001;
 double Elec = 0.0001;
+double Nuke = 0.01;
 String[] bodyType = new String[]{"Star", "Planet", "Moon"};
 int bodyIndex = 0;
 double startVelocityX = 0;
