@@ -116,8 +116,8 @@ class Body
           angleBetween -= PI;
         }
       }
-      netAccelerationX += ((((Nuke * myNuke * celestialArray.get(a).getNuke()) + Grav - (Elec * myCharge * celestialArray.get(a).getCharge())) * celestialArray.get(a).getMass()) / (distance * distance)) * Math.cos(angleBetween);
-      netAccelerationY += (((Grav - (Elec * myCharge * celestialArray.get(a).getCharge())) * celestialArray.get(a).getMass()) / (distance * distance)) * Math.sin(angleBetween);
+      netAccelerationX += ((((Nuke * myNuke * celestialArray.get(a).getNuke() / (distance * distance)) + Grav - (Elec * myCharge * celestialArray.get(a).getCharge())) * celestialArray.get(a).getMass()) / (distance * distance)) * Math.cos(angleBetween);
+      netAccelerationY += ((((Nuke * myNuke * celestialArray.get(a).getNuke() / (distance * distance)) + Grav - (Elec * myCharge * celestialArray.get(a).getCharge())) * celestialArray.get(a).getMass()) / (distance * distance)) * Math.sin(angleBetween);
       //System.out.println("net acc " + netAccelerationX);
     }
   }
