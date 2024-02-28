@@ -2,6 +2,7 @@ class Planet extends Body
 {
   public Planet()
   {
+  myNuke = 1;
   myCharge = 0;
   myMass = 50000;
   myX = mouseX;
