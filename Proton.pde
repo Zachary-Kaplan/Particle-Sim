@@ -3,7 +3,7 @@ class Proton extends Body
   public Proton()
   {
   myNuke = 10;
-  myCharge = 7;
+  myCharge = 70;
   myMass = 500; 
   myX = mouseX;
   myY = mouseY;
