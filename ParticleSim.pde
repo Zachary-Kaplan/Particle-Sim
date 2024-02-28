@@ -2,6 +2,7 @@ ArrayList <Body> celestialArray = new ArrayList <Body>();
 MenuButton John;
 GravityButton Margaret;
 ElectricityButton Adam;
+BondButton James;
 DecayButton Blorbo;
 NuclearButton Bill;
 double Grav = 0.001;
@@ -23,6 +24,7 @@ void setup()
   Adam = new ElectricityButton();
   Blorbo = new DecayButton();
   Bill = new NuclearButton();
+  James = new BondButton();
   //frameRate(10);
   size(1000,1000);
   background(0,0,0);
@@ -50,6 +52,7 @@ void draw()
     Adam.show();
     Blorbo.show();
     Bill.show();
+    James.show();
   } else
   {
     celestialArray.get(a).move();
@@ -69,15 +72,27 @@ void draw()
             tempY1 = celestialArray.get(a).contact(celestialArray.get(i), false);
             tempX2 = celestialArray.get(i).contact(celestialArray.get(a), true);
             tempY2 = celestialArray.get(i).contact(celestialArray.get(a), false);
-            celestialArray.get(a).setVelocityX(tempX1);
-            celestialArray.get(a).setVelocityY(tempY1);
-            celestialArray.get(i).setVelocityX(tempX2);
-            celestialArray.get(i).setVelocityX(tempY2);
-            for(int j = 0; j < 5; j++)
+            if(doesBond)
             {
-              celestialArray.get(a).move();
-              celestialArray.get(i).move();
+              if(Math.sqrt((tempX1 * tempX1) + (tempY1 * tempY1)) < 15)
+              {
+                tempX1 = (tempX1 + tempX2)/2;
+                tempY1 = (tempY1 + tempY2)/2;
+                tempX2 = (tempX1 + tempX2)/2;
+                tempY2 = (tempY1 + tempY2)/2;
+              }
             }
+            
+              celestialArray.get(a).setVelocityX(tempX1);
+              celestialArray.get(a).setVelocityY(tempY1);
+              celestialArray.get(i).setVelocityX(tempX2);
+              celestialArray.get(i).setVelocityX(tempY2);
+              for(int j = 0; j < 5; j++)
+              {
+                celestialArray.get(a).move();
+                celestialArray.get(i).move();
+              }
+            
           }
         }
       }
