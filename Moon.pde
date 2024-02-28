@@ -7,7 +7,7 @@ class Moon extends Body
   myMass = 10;
   myX = mouseX;
   myY = mouseY;
-  myDiameter = 4;
+  myDiameter = 4; 
   myVelocityX = startVelocityX;
   myVelocityY = startVelocityY;
   }
