@@ -4,7 +4,7 @@ class Planet extends Body
   {
   myNuke = 1;
   myCharge = 0;
-  myMass = 50000;
+  myMass = 50000; 
   myX = mouseX;
   myY = mouseY;
   myDiameter = 10;
