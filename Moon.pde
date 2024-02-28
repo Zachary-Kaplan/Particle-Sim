@@ -8,7 +8,7 @@ class Moon extends Body
   myX = mouseX;
   myY = mouseY;
   myDiameter = 4; 
-  myVelocityX = startVelocityX;
+  myVelocityX = startVelocityX; 
   myVelocityY = startVelocityY;
   }
   public void show()
