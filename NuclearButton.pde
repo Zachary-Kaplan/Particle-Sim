@@ -7,7 +7,7 @@ class NuclearButton extends GameButton
     myLenX = 100;
     myLenY = 20;
     myText = "Nuclear";
-  }
+  } 
   public void myPurpose()
   {
     if(Nuke == 0)
