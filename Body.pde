@@ -2,7 +2,7 @@ class Body
 { 
   protected double myX, myY;
   protected double myVelocityX, myVelocityY;
-  protected double myMass, myDiameter, myCharge;
+  protected double myMass, myDiameter, myCharge, myNuke;
   protected boolean outOfBounds = false;
   public Body() 
   {
@@ -116,7 +116,7 @@ class Body
           angleBetween -= PI;
         }
       }
-      netAccelerationX += (((Grav - (Elec * myCharge * celestialArray.get(a).getCharge())) * celestialArray.get(a).getMass()) / (distance * distance)) * Math.cos(angleBetween);
+      netAccelerationX += ((((Nuke * myNuke * celestialArray.get(a).getNuke()) + Grav - (Elec * myCharge * celestialArray.get(a).getCharge())) * celestialArray.get(a).getMass()) / (distance * distance)) * Math.cos(angleBetween);
       netAccelerationY += (((Grav - (Elec * myCharge * celestialArray.get(a).getCharge())) * celestialArray.get(a).getMass()) / (distance * distance)) * Math.sin(angleBetween);
       //System.out.println("net acc " + netAccelerationX);
     }
@@ -165,6 +165,10 @@ class Body
   public boolean delete()
   {
   return outOfBounds;
+  }
+  public boolean getNuke()
+  {
+  return myNuke;
   }
  
   //setters
