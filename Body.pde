@@ -162,14 +162,15 @@ class Body
   {
   return myCharge;
   }
+  public double getNuke()
+  {
+  return myNuke;
+  }
   public boolean delete()
   {
   return outOfBounds;
   }
-  public boolean getNuke()
-  {
-  return myNuke;
-  }
+
  
   //setters
   public void setVelocityX(double newVX)
