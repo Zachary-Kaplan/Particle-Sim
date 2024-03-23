@@ -9,7 +9,7 @@ class NuclearButton extends GameButton
     myText = "Nuclear";
   } 
   public void myPurpose()
-  {
+  { 
     if(Nuke == 0)
     {
       Nuke = 0.1;
