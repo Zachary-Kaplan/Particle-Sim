@@ -9,7 +9,7 @@ class BondButton extends GameButton
     myText = "Particle Bond";
   }
   public void myPurpose()
-  {
+  { 
     doesBond = !doesBond;
 
   }
