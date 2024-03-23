@@ -87,7 +87,7 @@ void draw()
               celestialArray.get(a).setVelocityY(tempY1);
               celestialArray.get(i).setVelocityX(tempX2);
               celestialArray.get(i).setVelocityX(tempY2);
-              while(dist(celestialArray.get(a).getX(),celestialArray.get(a).getY(),celestialArray.get(i).getX(),celestialArray.get(i).getY()) < 2 + (celestialArray.get(a).getDiameter() + celestialArray.get(1).getDiameter()) /2)
+              while(dist((float)celestialArray.get(a).getX(),(float)celestialArray.get(a).getY(),(float)celestialArray.get(i).getX(),(float)celestialArray.get(i).getY()) < 2 + (celestialArray.get(a).getDiameter() + celestialArray.get(1).getDiameter()) /2)
               {
                 celestialArray.get(a).move();
                 celestialArray.get(i).move();
