@@ -4,7 +4,7 @@ GravityButton Margaret;
 ElectricityButton Adam;
 BondButton James;
 DecayButton Blorbo;
-NuclearButton Bill;
+NuclearButton Bill; 
 double Grav = 0.001;
 double Elec = 0.0001;
 double Nuke = 0.1;
