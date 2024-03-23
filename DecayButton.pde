@@ -1,7 +1,7 @@
 class DecayButton extends GameButton
 { 
   public DecayButton()
-  {
+  { 
     myX = 230;
     myY = 200;
     myLenX = 100;
